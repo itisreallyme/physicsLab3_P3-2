@@ -37,7 +37,12 @@
     %
     \subsection*{Amplitude, Rise Time, Fall Time, Pulse Width}
     %
-    Text
+    Amplitude: In a wider sense a term used to characterize repeating phenomena. It is defined as a signals maximum deviation
+    from its arithmetic mean value.\par
+    Rise time: a technical term defined as the time it takes for a system to transition its output from \( 10\% \) to \( 90\% \)
+    of an infinitesimal steep input signal.\par
+    % Fall time:
+    Pulse width: 
     %
     \subsection*{Bandwidth and Rise Time of an Oscilloscope}
     %
@@ -65,7 +70,7 @@
     %
     \begin{figure}[h]
         \centering\includegraphics[width=\textwidth]{Spice/plot.jpg}
-        \caption{Plot of the output voltage at \textit{HV}. The voltage is subsequently progressing towards a peak voltage of \( \hat{U}_{HV} \approx \SI[]{150}[]{V} \)for various PWM duty cycles.}
+        \caption{Plot of the output voltage at \textit{HV}. The voltage is subsequently progressing towards a peak voltage of \( \hat{U}_{HV} \approx \SI[]{150}[]{V} \) with rising PWM duty cycle.}
         \label{fig:plotSimCircuit}
     \end{figure}
     %
@@ -100,17 +105,17 @@
         f_{Rep} = \left(t_{charge} + t_{discharge}\right)^{-1} \approx \SI{225.7}{kHz}
     \end{equation}
     %
-    \subsection*{Cable Characteristics of RG-58/U Coaxial Cable}
+    \subsection*{Cable Characteristics of RG-58/U Coaxial Cable}% A4
     %
     Nominal characteristic impedance: \(\SI{53}{\ohm}\)\par
     Nominal velocity of propagation: \(69.5\%\)\par
     Nominal delay (translates to the inverse of the absolute speed of propagation): \(\SI{4.85588}{\nicefrac{ns}{m}}\)\par
-    The values above are taken from the technical datasheet \cite{Belden.RG-58/U.CoaxCable.Datasheet}.
+    The values above are taken from the technical data sheet \cite{Belden.RG-58/U.CoaxCable.Datasheet}.
     %
-    \subsection*{Determining the Suitability of the Oscilloscope}
+    \subsection*{Determining the Suitability of the Oscilloscope}% A5
     %
 
     %
-    \subsection*{Sampling Rate}
+    \subsection*{Sampling Rate}% A6
     %
     %
