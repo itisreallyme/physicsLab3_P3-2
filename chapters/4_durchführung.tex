@@ -1,42 +1,42 @@
 \chapter{Execution}
-    \section{Boost converter}
+    \section{Boost Converter}
         To examine the characteristics of the pulse generator, the potentiometer on the circuit board is first set completely
         counterclockwise. The power supply is turned on, so that the duty cycle (in \%) and the output voltage can be taken from
         the LCD. The two values are noted and the potentiometer is turned up until the value for duty cycle has increased by 10 \%.
-        Again the values are noted. This process is repeated until the potentiometer is turned completely clockwise.
+        Again the values are noted. This process is repeated until the potentiometer is turned completely clockwise. The record can be seen in \cref{subtab:3-1_duty_vs_voltage}.
         %
-    \section{Avalanche pulse generator}
+    \section{Avalanche Pulse Generator}
         The potentiometer is set back to the fully counterclockwise position. Now the oscilloscope is needed and therefore
         switched on. The output of the pulse generator gets connected with the Oscilloscope via a short coaxial cable. The
         potentiometer is slowly turned up until a pulse appears on the oscilloscope. The display is adjusted so that the signal
-        can be read easily. A photograph is taken for documentation purposes and the voltage shown on the LCD is noted. After
-        that, the voltage is set to \(U = \SI{75}{V}\) and a second photograph is taken from the screen.
+        can be read easily. A photograph is taken for documentation purposes (subfig:osci:avalanche_pulse_signal) and the voltage shown on the LCD is noted (bottom of \cref{subtab:3-1_duty_vs_voltage}). After
+        that, the voltage is set to \(U = \SI{75}{V}\) and a second photograph is taken from the screen (\cref{subfig:osci:pulsuntersuchung}).
         %
-    \section{Signal propagation}
-        \subsection{Propagation time}
+    \section{Signal Propagation}
+        \subsection{Propagation Time}
             For this experiment a T-piece is inserted between the oscilloscope and the pulse generator. Therefore, the T-piece is
             connected to channel 1 of the oscilloscope and the short coaxial cable from the pulse generator is plugged into the
             T-piece. A second T-piece is connected to channel 2 of the oscilloscope. One end of the T-piece in channel 2 is terminated
             with the \SI{50}{\ohm} terminal resistor, mentioned in the set-up chapter. There is one open end left on each T-piece.
             The three different coaxial cables get connected one after another to these ends. For each cable, there are two pulses
             shown on the oscilloscope. With the cursor function of the oscilloscope, the time delay between the pulses are measured
-            and noted.
+            and noted (\cref{subtab:3-3-1_propagationTimes_3_cables}). The oscilloscope will look like in \cref{subfig:osci:ch1-ch2_delayed_pulse}.
             %
-        \subsection{Cable characteristics}
+        \subsection{Cable Characteristics}
             To investigate the cable characteristics, the length of the three cables given is measured with the tape measure.
             Afterwards they are connected one after another with the T-piece at channel 1. Channel 2 is not needed during this
             measurement. For each cable two photographs are taken from the oscilloscopes screen. The first photograph with an open
-            end, the second with a short-circuited end. To short-circuit the end of the coaxial cable, a screwdriver is used. With
+            end (as in \cref{subfig:osci:3-3-2_open_reflectionTime}), the second with a short-circuited end (as in \cref{subfig:osci:3-3-2_shorted}). To short-circuit the end of the coaxial cable, a screwdriver is used. With
             the cursor function, the propagation time \(\tau_0\) (for open end) and \(\tau_s\) (for short-circuited end) are read from
             the screen and noted.\par
             Now, the termination box is connected to the open end of the cable. The potentiometer on the termination box is rotated
-            while looking at the oscilloscopes screen. Once the oscilloscope shows a minimum amplitude of the reflected pulse, the
+            while looking at the oscilloscopes screen. Once the oscilloscope shows a minimum amplitude of the reflected pulse (as in \cref{subfig:osci:3-3-2_Z_0_equal_R_term}), the
             setting of the potentiometer is not changed anymore. The termination box is removed and then connected to the multimeter.
             The multimeter is set so that the resistance of the termination box can be read from it. This procedure is repeated for
             the other remaining cables.
             %
-    \section{Time Domain Reflectometry}
+    \subsection{Time Domain Reflectometry}
         The cable with unknown length and an internal fault is now connected to the T-piece at channel 1. The first cursor of the
         oscilloscope is set to the origin pulse. The second cursor is first set to the pulse of the reflection of the internal
-        fault. The time delay is noted. Then the second cursor is set to the pulse of the reflection of the cables end. The time
+        fault (\cref{subfig:osci:3-3-3_lengthToDefect}). The time delay is noted. Then the second cursor is set to the pulse of the reflection of the cables end (\cref{subfig:osci:3-3-3_overallLength}). The time
         delay is noted again.
